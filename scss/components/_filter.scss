@@ -1,0 +1,17 @@
+.filter {
+  @include r($r-md) {
+    position: relative;
+  }
+
+  &__btn {
+    display: none;
+    outline: transparent;
+    border: none;
+    padding: 18px 90px;
+
+    @include r($r-md) {
+      display: block;
+      margin-bottom: 55px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.clients {
+  padding: 35px 0;
+  margin-bottom: 80px;
+
+  @include r($r-md) {
+    padding-top: 75px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    @include r($r-md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    opacity: 0.2;
+    transition: opacity 0.3s;
+
+    @include r($r-md) {
+      margin: 0 20px 40px;
+    }
+
+    @include r($r-xs) {
+      margin-bottom: 35px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}

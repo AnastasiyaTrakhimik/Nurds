@@ -1,0 +1,59 @@
+.contacts {
+  height: 416px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/icons/map-marker.png');
+    width: 162px;
+    height: 190px;
+    right: 36vw;
+    top: 66px;
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__wrapper {
+    max-width: 320px;
+    padding: 48px 50px;
+    background-color: $white;
+    font-style: normal;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.7;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  &__address {
+    color: $dark-200;
+    margin-bottom: 18px;
+  }
+
+  &__tel {
+    display: block;
+    margin-bottom: 37px;
+    color: $dark-200;
+  }
+
+  &__btn {
+    padding: 16px 44px;
+    outline: transparent;
+    border: none;
+  }
+}

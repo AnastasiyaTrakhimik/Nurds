@@ -1,0 +1,189 @@
+@@include('../parts/_head.html',{
+"title":"Магазин"
+})
+@@include('../parts/_header.html')
+
+<main class="main">
+  <section class="shop">
+    <h1 class="shop__title">Магазин готовых шаблонов</h1>
+    <div class="container">
+      <div class="shop__wrap">
+        <div class="filter">
+          <button class="filter__btn btn btn--pink">
+            <span class="visually-hidden">Открыть фильтры</span>
+            Фильтры
+          </button>
+          <div class="shop__filters">
+            <h2 class="visually-hidden">Фильтры</h2>
+            <div class="shop__top">
+              <p>Стоимость:</p>
+            </div>
+            <form action="" class="shop__form">
+
+              @@include('../parts/_range-slider.html')
+
+              <div class="shop__heading">
+                <p>Сетка:</p>
+              </div>
+              <ul class="shop__radio-button">
+
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="grid">
+                    <input class="shop__radio-btn" id="grid" type="radio" name="grid" checked>
+                    <span class="shop__radio"></span>
+                    Адаптивная
+                  </label>
+                </li>
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="grid1">
+                    <input class="shop__radio-btn" id="grid1" type="radio" name="grid">
+                    <span class="shop__radio"></span>
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="grid2">
+                    <input class="shop__radio-btn" id="grid2" type="radio" name="grid">
+                    <span class="shop__radio"></span>
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
+              <div class="shop__heading">
+                <p>Особенности:</p>
+              </div>
+
+              <ul class="shop__check-box">
+
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="features">
+                    <input class="shop__check-bx" id="features" type="checkbox" checked>
+                    <span class="shop__checkbox"></span>
+                    Слайдер
+                  </label>
+                </li>
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="features1">
+                    <input class="shop__check-bx" id="features1" type="checkbox">
+                    <span class="shop__checkbox"></span>
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="features2">
+                    <input class="shop__check-bx" id="features2" type="checkbox" checked>
+                    <span class="shop__checkbox"></span>
+                    Новости
+                  </label>
+                </li>
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="features3">
+                    <input class="shop__check-bx" id="features3" type="checkbox">
+                    <span class="shop__checkbox"></span>
+                    Галерея
+                  </label>
+                </li>
+                <li class="shop__wrapping">
+                  <label class="shop__label" for="features4">
+                    <input class="shop__check-bx" id="features4" type="checkbox">
+                    <span class="shop__checkbox"></span>
+                    Корзина
+                  </label>
+                </li>
+              </ul>
+              <button class="shop__btn btn" type="submit">Показать</button>
+            </form>
+          </div>
+        </div>
+        <div class="shop-content">
+          <h2 class="visually-hidden">Список товаров</h2>
+          <div class="shop__wrapper">
+            <div class="shop__top">
+              <p>Сортировать:</p>
+            </div>
+            <form action="" class="shop-content__form">
+              <ul class="shop-nav">
+                <li class="shop-nav__item"><button class="shop-nav__button">По цене</button></li>
+                <li class="shop-nav__item"><button class="shop-nav__button">По типу</button></li>
+                <li class="shop-nav__item"><button class="shop-nav__button">По названию</button></li>
+                <li class="shop-nav__item"><button class="shop-nav__button shop-nav__button--down"><svg width="11"
+                      height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 10L0 0H11" fill="#A6A6A6" />
+                    </svg></button></li>
+                <li class="shop-nav__item"><button class="shop-nav__button shop-nav__button--up"><svg width="11"
+                      height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
+                    </svg></button></li>
+              </ul>
+            </form>
+          </div>
+
+          <ul class="shop-content__items">
+            <li class="shop-content__item">
+              @@include('../parts/_product-card.html', {
+              "img": "images/cards/sedona.png",
+              "name": "Sedona",
+              "text": "Информационный сайт для туристов",
+              "price": "9900"
+              })
+            </li>
+
+            <li class="shop-content__item">
+              @@include('../parts/_product-card.html', {
+              "img": "images/cards/pink.png",
+              "name": "Pink App",
+              "text": "Продуктовый лендингприложения для iOS и Android",
+              "price": "9900"
+              })
+            </li>
+
+            <li class="shop-content__item">
+              @@include('../parts/_product-card.html', {
+              "img": "images/cards/barbershop.png",
+              "name": "Заголовок",
+              "text": "Текст",
+              "price": "9900"
+              })
+            </li>
+
+            <li class="shop-content__item">
+              @@include('../parts/_product-card.html', {
+              "img": "images/cards/mishka.png",
+              "name": "Заголовок",
+              "text": "Текст",
+              "price": "9900"
+              })
+            </li>
+
+            <li class="shop-content__item">
+              @@include('../parts/_product-card.html', {
+              "img": "images/cards/aplus.png",
+              "name": "Заголовок",
+              "text": "Текст",
+              "price": "9900"
+              })
+            </li>
+
+            <li class="shop-content__item">
+              @@include('../parts/_product-card.html', {
+              "img": "images/cards/kvast.png",
+              "name": "Заголовок",
+              "text": "Текст",
+              "price": "9900"
+              })
+            </li>
+          </ul>
+
+          @@include('../parts/_pagination.html')
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../parts/_contacts.html')
+
+</main>
+
+@@include('../parts/_footer.html')
+@@include('../parts/_footer-scripts.html')

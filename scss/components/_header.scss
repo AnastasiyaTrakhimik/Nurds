@@ -1,0 +1,146 @@
+.header {
+  background-color: $grey-200;
+  font-weight: 500;
+  line-height: 1.9;
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  &.fixed {
+    padding-top: 130px;
+  }
+
+  &__inner.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $grey-200;
+    transition: background-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+
+    @include r($r-md) {
+      padding: 0 20px 0 0;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 49px;
+  text-transform: uppercase;
+
+  @include r($r-md) {
+    position: relative;
+  }
+
+  &__btn {
+    display: none;
+
+    @include r($r-md) {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 34px 0 0 0;
+      margin-left: auto;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @include r($r-md) {
+      transform: translateY(-200%);
+      transition: transform 0.3s;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 130px;
+      background-color: $grey-200;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px 0;
+      transition: all 0.5s;
+      margin: 0 -20px;
+      z-index: 99;
+
+      &.menu__list--active {
+        transform: translateY(0%);
+        transition: transform 0.3s;
+      }
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 45px;
+
+    @include r($r-md) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $black;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 12px;
+
+    @include r($r-md) {
+      display: block;
+      padding: 15px 0;
+      font-size: 20px;
+      border: none;
+    }
+
+    @include r($r-sm) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: $pink-200;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      border-color: $pink-200;
+    }
+  }
+
+  &__basket {
+    display: block;
+    position: relative;
+    transition: color 0.3s;
+
+    @include r($r-md) {
+      font-size: 0;
+      transform: translateX(-50px);
+    }
+
+    @include r($r-sm) {
+      transform: translateX(-30px);
+    }
+
+    &:hover {
+      color: $pink-200;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -40px;
+      width: 15px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-image: url('../images/icons/basket.svg');
+      background-size: auto;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+$default: #283136;
+$black: #000;
+$white: #fff;
+
+$pink-600:#D7373B;
+$pink-400: #E74246;
+$pink-200: #FB565A;
+
+$green-600:#00AA62;
+$green-400:#00BC6C;
+$green-200:#00CA74;
+
+$yellow-600:#E5A722;
+$yellow-400: #EAB534;
+$yellow-200: #EFC84A;
+
+$grey-900: #D7DCDF;
+$grey-800: #B4B9BB;
+$grey-700: #D7DCDE;
+$grey-600: #D5D5D5;
+$grey-500: #4D4D4D;
+$grey-400: #DFDFDF;
+$grey-300: #DBDBDB;
+$grey-200: #EEEEEE;
+$grey-100: #E1E1E1;
+
+$dark-200: #666666;
+$dark-400: #444444;
+$dark-600: #231F20;
+
+$r-lg: 1200;
+$r-md: 992;
+$r-sm: 768;
+$r-xs: 576;
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+@mixin s($height) {
+  @media only screen and (max-height: $height+ "px") {
+    @content;
+  }
+}

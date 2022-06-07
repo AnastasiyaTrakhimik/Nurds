@@ -1,0 +1,143 @@
+@@include('../parts/_head.html',{
+  "title":"Главная страница"
+})
+@@include('../parts/_header.html')
+
+
+<main class="main">
+  <h1 class="visually-hidden">Nerd`s Дизайн-студия Краснодар</h1>
+  <section class="top-slider">
+    <h2 class="visually-hidden">Промо-товары</h2>
+    <div class="container">
+      <ul class="top-slider__inner">
+        <li class="top-slider__item" style="background-image: url(images/slider/1.png);">
+          <div class="top-slider__content">
+            <div class="top-slider__title">
+              <p>Долго, дорого, скрупулезно.</p>
+            </div>
+            <div class="top-slider__descr">
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.
+              </p>
+            </div>
+            <a class="btn btn--pink top-slider__link">Узнать больше</a>
+          </div>
+        </li>
+        <li class="top-slider__item" style="background-image: url(images/slider/1.png);">
+          <div class="top-slider__content">
+            <div class="top-slider__title">
+              <p>Долго, дорого, скрупулезно.</p>
+            </div>
+            <div class="top-slider__descr">
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.
+              </p>
+            </div>
+            <a class="btn btn--pink top-slider__link">Узнать больше</a>
+          </div>
+        </li>
+        <li class="top-slider__item" style="background-image: url(images/slider/1.png);">
+          <div class="top-slider__content">
+            <div class="top-slider__title">
+              <p>Долго, дорого, скрупулезно.</p>
+            </div>
+            <div class="top-slider__descr">
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.
+              </p>
+            </div>
+            <a class="btn btn--pink top-slider__link">Узнать больше</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about border">
+    <h2 class="visually-hidden">Предложения по web-дизайну</h2>
+
+    <div class="container">
+      <ul class="services">
+        <li class="services__item">
+          <div class="services__image" style="background-image: url('images/icons/laptop.png');"></div>
+          <h3 class="services__title services__title--laptop">Веб-сайты</h3>
+          <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <button class="services__btn btn btn--pink">Заказать</button>
+        </li>
+        <li class="services__item">
+          <div class="services__image" style="background-image: url('images/icons/mobile.png');"></div>
+          <h3 class="services__title services__title--mobile">Приложения</h3>
+          <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <button class="services__btn btn--green btn">Заказать</button>
+        </li>
+        <li class="services__item">
+          <div class="services__image" style="background-image: url('images/icons/presentation.png');"></div>
+          <h3 class="services__title services__title--presentation">Презентации</h3>
+          <p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <button class="services__btn btn--yellow btn">Заказать</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="top-info border">
+    <h2 class="visually-hidden">О студии</h2>
+
+    <div class="container top-info__container">
+      <div class="top-info__inner">
+        <div class="studio">
+          <p class="studio__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <div class="studio__text">
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+              креатива. Работаем не покладая рук, как
+              роботы.</p>
+          </div>
+        </div>
+
+        <div class="orders">
+          <div class="orders__heading"> Выполняем заказы на разработку:</div>
+          <ul class="orders__list">
+            <li class="orders__item">Веб-сайтов любой сложности</li>
+            <li class="orders__item">Мобильных приложений для iOS и Android</li>
+            <li class="orders__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+      </div>
+      <div class="top-info__inner">
+        <div class="numbers">
+          <div class="numbers__image" style="background-image: url('images/nerds.jpg');"></div>
+          <div class="numbers__descr">
+            <div class="numbers__heading">
+              <p>с 2004 года Любим точность во всем:</p>
+            </div>
+            <ul class="numbers__percents">
+              <li class="numbers__percent">146<span class="numbers__badge">%</span>
+                <span class="numbers__condition">Уровень самоотдачи</span>
+              </li>
+              <li class="numbers__percent">100<span class="numbers__badge">%</span>
+                <span class="numbers__condition">Соблюдение сроков</span>
+              </li>
+              <li class="numbers__percent">50<span class="numbers__badge">%</span>
+                <span class="numbers__condition">Минимальная предоплата</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="clients border">
+    <div class="container">
+      <ul class="clients__list">
+        <li class="clients__item"><img src="images/clients/1.png" alt="client"></li>
+        <li class="clients__item"><img src="images/clients/2.png" alt="client"></li>
+        <li class="clients__item"><img src="images/clients/3.png" alt="client"></li>
+        <li class="clients__item"><img src="images/clients/4.png" alt="client"></li>
+      </ul>
+    </div>
+  </div>
+
+  @@include('../parts/_contacts.html')
+  @@include('../parts/_form.html')
+
+</main>
+
+@@include('../parts/_footer.html')
+@@include('../parts/_footer-scripts.html')
